@@ -1,0 +1,1183 @@
+$xs: 0;
+$sm: 750px;
+$md: 1000px;
+$lg: 1200px;
+$xl: 1400px;
+
+$light-blue: #2065f6;
+$dark-blue: #0a2540;
+
+.header {
+  .navbar-custom {
+    padding-top: 33px;
+    padding-bottom: 33px;
+    .navbar-toggler {
+      @media (min-width: 1400px) {
+        display: none;
+      }
+    }
+    .navbar-collapse {
+      @media (min-width: 1400px) {
+        display: flex !important;
+      }
+    }
+    .container-fluid {
+      flex-wrap: nowrap;
+      @media screen and (max-width: 1400px) {
+        flex-wrap: wrap;
+      }
+    }
+    .navbar-brand {
+      padding-left: 3%;
+      margin-right: 2.6%;
+      @media screen and (max-width: 1535px) {
+        margin-right: 1.5%;
+      }
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 0rem;
+    }
+  }
+
+  ul {
+    margin: 0px;
+    li {
+      display: inline;
+      font-family: "Sofia Pro", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 12.5px;
+      a {
+        display: inline;
+        @media screen and (max-width: $sm) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .links-left {
+    @media screen and (max-width: $xl) {
+      padding-top: 30px;
+      margin-left: 45px;
+      padding-left: 0px;
+    }
+    a {
+      margin-right: 62px;
+      color: $dark-blue !important;
+      @media screen and (max-width: 1535px) {
+        margin-right: 40px;
+      }
+      @media screen and (max-width: $xl) {
+        margin-right: 62px;
+      }
+    }
+    .inspiration {
+      margin-right: 0px;
+    }
+  }
+
+  .links-right {
+    padding-right: 70px;
+    @media screen and (max-width: 1535px) {
+      padding-right: 40px;
+    }
+    @media screen and (max-width: $xl) {
+      padding-top: 30px;
+      margin-left: 0px;
+      padding-left: 0px;
+    }
+    .join {
+      @media screen and (max-width: $xl) {
+        margin-left: 45px;
+      }
+    }
+    .sign {
+      @media screen and (max-width: $xl) {
+        margin-left: 45px;
+      }
+    }
+    .try {
+      margin-left: 30px;
+      background-color: #e9ff4f;
+      padding: 13px 30px 11px 30px;
+      border-radius: 90px;
+      @media screen and (max-width: $xl) {
+        width: 190px;
+      }
+      @media screen and (max-width: $sm) {
+        margin-left: 15px;
+        width: 190px;
+      }
+    }
+    a {
+      margin-left: 25px;
+      color: $light-blue !important;
+      @media screen and (max-width: 1535px) {
+        margin-left: 15px;
+      }
+      @media screen and (max-width: $xl) {
+        margin-right: 22px;
+        padding-left: 0px;
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+.headline {
+  height: 240px;
+  @media screen and (max-width: $lg) {
+    height: 200px;
+  }
+  @media screen and (max-width: $md) {
+    height: 175px;
+  }
+  .container {
+    max-width: 1155px;
+    margin: auto;
+    @media screen and (max-width: $lg) {
+      max-width: 940px;
+    }
+    @media screen and (max-width: $md) {
+      max-width: 740px;
+    }
+    @media screen and (max-width: $sm) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
+    .headline-image {
+      padding-top: 36px;
+      padding-bottom: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    .headline-text {
+      text-align: center;
+      padding-top: 15px;
+
+      h2 {
+        font-family: "Sofia Pro", sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        color: $dark-blue;
+
+        width: 100%;
+        @media screen and (max-width: $lg) {
+          font-size: 26px;
+        }
+        @media screen and (max-width: $md) {
+          font-size: 23px;
+        }
+        @media screen and (max-width: $sm) {
+          font-size: 20px;
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.slider {
+  max-height: 596px;
+  .container-fluid {
+    width: 91%;
+    padding: 0px;
+
+    img {
+      border-radius: 32px;
+      width: 100%;
+    }
+  }
+}
+
+.trusted {
+  .container {
+    max-width: 1140px;
+    padding: 0px;
+    @media screen and (max-width: 1500px) {
+      max-width: 90%;
+    }
+
+    h3 {
+      padding-top: 82px;
+      text-align: center;
+      font-family: "Sofia Pro", sans-serif;
+      font-weight: 400;
+      color: $light-blue;
+      font-size: 21px;
+      margin-bottom: 63px;
+    }
+
+    .companies {
+      padding: 0px;
+      margin: 0px;
+      justify-content: space-between;
+      @media screen and (max-width: $sm) {
+        justify-content: space-around;
+      }
+
+      .col-auto {
+        padding: 0px;
+        img {
+          margin-bottom: 70px;
+          @media screen and (max-width: 1500px) {
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.explained {
+  margin-bottom: 10%;
+  margin-top: 3%;
+  .container-fluid {
+    padding: 0px;
+    .row-top {
+      .couch {
+        img {
+          padding-top: 27px;
+          max-width: 100%;
+          @media screen and (max-width: $md) {
+            padding-right: 20px;
+          }
+        }
+      }
+      .move {
+        max-width: 511px;
+        margin-left: 77px;
+        @media screen and (max-width: $lg) {
+          margin-right: 35px;
+        }
+        @media screen and (max-width: $md) {
+          padding-top: 61px;
+          text-align: center;
+          margin: auto;
+        }
+
+        h3 {
+          font-family: "Sofia Pro", sans-serif;
+          font-weight: 600;
+          font-size: 50px;
+          color: $light-blue;
+        }
+        p {
+          font-family: "Sofia Pro", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          color: #4a4a4a;
+          @media screen and (max-width: $lg) {
+            font-size: 16px;
+          }
+          @media screen and (max-width: 600px) {
+            padding-left: 50px;
+            padding-right: 50px;
+          }
+          span {
+            color: $light-blue;
+          }
+        }
+      }
+    }
+    .row-bottom {
+      padding-top: 100px;
+      .machine {
+        text-align: right;
+        img {
+          max-width: 100%;
+        }
+      }
+      .expand {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: 80px;
+        margin-top: 55px;
+        text-align: right;
+        @media screen and (max-width: $md) {
+          max-width: 511px;
+          padding-top: 61px;
+          text-align: center;
+          margin: auto;
+        }
+        h3 {
+          font-family: "Sofia Pro", sans-serif;
+          font-weight: 600;
+          font-size: 50px;
+          color: $light-blue;
+        }
+        p {
+          font-family: "Sofia Pro", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          color: #4a4a4a;
+          @media screen and (max-width: $lg) {
+            font-size: 16px;
+          }
+          @media screen and (max-width: 600px) {
+            padding-left: 50px;
+            padding-right: 50px;
+          }
+          span {
+            color: $light-blue;
+            font-weight: 700;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.reel {
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-bottom: 7%;
+  @media screen and (max-width: $md) {
+    margin-bottom: 20%;
+  }
+  #business-text,
+  #business-video,
+  #education-text,
+  #education-video,
+  #small-business-text,
+  #small-business-video,
+  #small-education-text,
+  #small-education-video {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+    color: $dark-blue;
+    @media screen and (max-width: $md) {
+      margin-bottom: 5%;
+    }
+  }
+  .container {
+    padding-bottom: 6%;
+    max-width: 1546px;
+    background-image: url("docs/assets/reel.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 45px;
+    @media screen and (max-width: $md) {
+      display: none;
+    }
+    .reel-text {
+      .textbox {
+        padding-left: 10%;
+        padding-top: 14%;
+        color: white;
+        height: 35vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @media screen and (max-width: $xl) {
+          padding-top: 8%;
+          padding-left: 5%;
+        }
+        @media screen and (max-width: 1250px) {
+          padding-top: 4%;
+          padding-left: 4%;
+        }
+        .buttons {
+          list-style: none;
+          border: 1px solid #2a4159;
+          border-radius: 5rem;
+          padding: 2px;
+          display: flex;
+          justify-content: space-between;
+
+          li {
+            button {
+              font-family: "Sofia Pro", sans-serif;
+              font-weight: 600;
+              font-size: 18px;
+              color: white;
+              padding: 10px 25px 10px 25px;
+              background-color: $dark-blue;
+              border-radius: 90px;
+              border: none;
+              outline: none;
+              @media screen and (max-width: $xl) {
+                font-size: 16px;
+              }
+              @media screen and (max-width: 1250px) {
+                font-size: 12px;
+              }
+            }
+            .button-active {
+              background-color: $light-blue;
+            }
+          }
+        }
+
+        .text {
+          margin-top: 8%;
+          display: block;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 20.5vw;
+          @media screen and (max-width: $xl) {
+            height: 23.5vw;
+            margin-top: 5%;
+          }
+          @media screen and (max-width: 1250px) {
+            margin-top: 0%;
+          }
+          p {
+            padding-right: 10%;
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 400;
+            font-size: 16.5px;
+            line-height: 28px;
+            color: white;
+            span {
+              color: #9eb64c;
+            }
+            @media screen and (max-width: $xl) {
+              font-size: 14.5px;
+            }
+            @media screen and (max-width: 1250px) {
+              font-size: 12.5px;
+              margin-bottom: 0px;
+            }
+          }
+          ul {
+            list-style: none;
+            padding: 0px;
+            display: inline;
+            margin: 0px;
+            .mil {
+              margin-right: 15.5%;
+              @media screen and (max-width: 1250px) {
+                margin-right: 10.5%;
+              }
+            }
+            li {
+              max-width: 184px;
+              display: inline-block;
+              margin-top: 10%;
+              @media screen and (max-width: $xl) {
+                max-width: 140px;
+              }
+              h2 {
+                font-family: "Sofia Pro", sans-serif;
+                font-weight: 600;
+                font-size: 29px;
+                margin: 0px;
+                margin-bottom: 2%;
+                @media screen and (max-width: $xl) {
+                  font-size: 24px;
+                }
+                @media screen and (max-width: 1250px) {
+                  font-size: 16px;
+                }
+              }
+              p {
+                padding: 0px;
+                font-family: "Sofia Pro", sans-serif;
+                font-weight: 400;
+                line-height: 21px;
+                font-size: 13.5px;
+                color: #626f7d;
+                margin: 0px;
+                @media screen and (max-width: 1250px) {
+                  font-size: 11.5px;
+                }
+              }
+            }
+          }
+          button {
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: white;
+            padding: 10px 25px 10px 25px;
+            background-color: $light-blue;
+            border-radius: 90px;
+            border: none;
+            outline: none;
+            margin-top: 10%;
+            @media screen and (max-width: $xl) {
+              font-size: 16px;
+            }
+            @media screen and (max-width: 1250px) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .reel-video {
+      .vid {
+        width: 79%;
+        margin-left: 7%;
+        margin-top: 8.5%;
+        video {
+          max-width: 100%;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  .small-screen {
+    display: none;
+    @media screen and (max-width: $md) {
+      display: block;
+    }
+    .video {
+      padding-bottom: 16%;
+      padding-right: 20px;
+      padding-left: 20px;
+      border-radius: 25px;
+      background-image: url("docs/assets/screen2.png");
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: 50% 10%;
+      margin-bottom: 25px;
+      @media screen and (max-width: 500px) {
+        background-size: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+      .vid {
+        width: 79%;
+        margin-left: 10.5%;
+        padding-top: 25px;
+        @media screen and (max-width: 500px) {
+          padding-top: 13px;
+          width: 83%;
+          margin-left: 9%;
+        }
+        video {
+          max-width: 100%;
+          border-radius: 20px;
+        }
+      }
+    }
+    .small-screen-text {
+      padding-top: 10%;
+      color: white;
+      width: 90%;
+      padding-bottom: 8%;
+      background-color: $dark-blue;
+      border-radius: 20px;
+      margin: auto;
+      @media screen and (max-width: 500px) {
+        width: 98%;
+      }
+      .buttons {
+        list-style: none;
+        border: 1px solid #2a4159;
+        border-radius: 5rem;
+        padding: 2px;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        @media screen and (max-width: $sm) {
+          width: 90%;
+        }
+        @media screen and (max-width: 500px) {
+          flex-direction: column;
+          border: 0;
+        }
+        li {
+          @media screen and (max-width: 500px) {
+            margin: auto;
+          }
+          button {
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            color: white;
+            padding: 10px 25px 10px 25px;
+            background-color: $dark-blue;
+            border-radius: 90px;
+            border: none;
+            outline: none;
+            @media screen and (max-width: $sm) {
+              font-size: 15px;
+            }
+            @media screen and (max-width: 500px) {
+              margin-bottom: 15px;
+              border: 1px solid #2a4159;
+            }
+          }
+          .button-active {
+            background-color: $light-blue;
+          }
+        }
+      }
+      .paragraph {
+        width: 80%;
+        padding-top: 8%;
+        text-align: center;
+        margin: auto;
+        font-size: 16.5px;
+        span {
+          color: #9eb64c;
+        }
+      }
+      .bottom-text {
+        text-align: center;
+        button {
+          margin-top: 55px;
+          font-family: "Sofia Pro", sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          color: white;
+          padding: 10px 25px 10px 25px;
+          background-color: $light-blue;
+          border-radius: 90px;
+          border: none;
+          outline: none;
+          text-align: center;
+          @media screen and (max-width: $sm) {
+            font-size: 16px;
+          }
+          @media screen and (max-width: 1250px) {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .short-text {
+        list-style: none;
+        padding: 0px;
+        text-align: center;
+        li {
+          margin-top: 55px;
+          max-width: 184px;
+          display: inline-block;
+          h2 {
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 600;
+            font-size: 29px;
+          }
+          p {
+            padding: 0px;
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 400;
+            line-height: 21px;
+            font-size: 13.5px;
+            color: #626f7d;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.features {
+  margin-bottom: 12%;
+  .container {
+    max-width: 1423px;
+    @media screen and (max-width: 1500px) {
+      max-width: 90%;
+    }
+    .main-text {
+      @media screen and (max-width: $sm) {
+        text-align: center;
+      }
+      h2 {
+        font-family: "Sofia Pro", sans-serif;
+        font-weight: 600;
+        color: $light-blue;
+        font-size: 50px;
+        @media screen and (max-width: $xl) {
+          font-size: 46px;
+        }
+        @media screen and (max-width: $md) {
+          font-size: 40px;
+        }
+        @media screen and (max-width: $sm) {
+          font-size: 36px;
+        }
+      }
+      p {
+        padding-top: 6px;
+        font-family: "Sofia Pro", sans-serif;
+        font-weight: 300;
+        color: black;
+        font-size: 27px;
+        margin-bottom: 5px;
+        @media screen and (max-width: $xl) {
+          font-size: 23px;
+        }
+        @media screen and (max-width: $md) {
+          font-size: 20px;
+        }
+        @media screen and (max-width: $xs) {
+          font-size: 18px;
+        }
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .cards {
+      justify-content: space-between;
+      @media screen and (max-width: $sm) {
+        justify-content: space-around;
+      }
+
+      .card {
+        border: 0px solid black;
+        max-width: 240px;
+        @media screen and (max-width: $sm) {
+          text-align: center;
+        }
+
+        .card-image {
+          height: 150px;
+          display: flex;
+          align-items: flex-end;
+          @media screen and (max-width: $sm) {
+            justify-content: center;
+          }
+        }
+        .card-body {
+          padding: 0px;
+          .card-title {
+            padding-top: 18px;
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 400;
+            color: black;
+            font-size: 18px;
+          }
+          .card-text {
+            padding-top: 10px;
+            font-size: 14.5px;
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 300;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.done {
+  background-color: #f2f2f2;
+  padding-top: 81px;
+  padding-bottom: 80px;
+
+  h2 {
+    margin-left: 151px;
+    margin-bottom: 77px;
+    font-family: "Sofia Pro", sans-serif;
+    font-weight: 600;
+    color: $light-blue;
+    font-size: 50px;
+    @media screen and (max-width: $xl) {
+      font-size: 46px;
+    }
+    @media screen and (max-width: $md) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: $sm) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: 1140px) {
+      text-align: center;
+      margin-left: 0px;
+    }
+  }
+  .container {
+    max-width: 1545px;
+    padding: 0px;
+    @media screen and (max-width: 1600px) {
+      max-width: 90%;
+    }
+
+    .photos {
+      padding: 0px;
+      margin: 0px;
+      justify-content: space-between;
+      @media screen and (max-width: 1600px) {
+        justify-content: space-around;
+      }
+
+      .col-auto {
+        padding: 0px;
+        max-width: 100%;
+        margin: 10px;
+
+        img {
+          margin-bottom: 70px;
+          max-width: 480px;
+          padding-top: 10px;
+          box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+          @media screen and (max-width: 1500px) {
+            margin-left: 15px;
+            margin-right: 15px;
+          }
+          @media screen and (max-width: 585px) {
+            max-width: 100%;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cta {
+  margin-top: 10.5%;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-bottom: 13%;
+  .container {
+    max-width: 1403px;
+
+    .row {
+      justify-content: space-between;
+      @media screen and (max-width: $md) {
+        display: flex;
+        flex-direction: column !important;
+        height: 1500px;
+      }
+
+      .left {
+        max-width: 48.8%;
+        min-height: 680px;
+        padding-right: 10px;
+        padding-left: 43px;
+        background-color: $light-blue;
+        border-radius: 8px;
+        @media screen and (max-width: $md) {
+          margin: auto;
+          max-width: 655px;
+          margin-bottom: 57px;
+        }
+        @media screen and (max-width: $sm) {
+          text-align: center;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+
+        h2 {
+          padding-top: 5.5%;
+          font-family: "Sofia Pro", sans-serif;
+          font-weight: 600;
+          color: white;
+          font-size: 44px;
+          @media screen and (max-width: $sm) {
+            font-size: 36px;
+          }
+        }
+        p {
+          max-width: 575px;
+          padding-top: 2.5%;
+          font-family: "Sofia Pro", sans-serif;
+          font-weight: 400;
+          color: #799ce4;
+          font-size: 18px;
+          line-height: 30px;
+          @media screen and (max-width: $sm) {
+            margin: auto;
+            font-size: 16px;
+          }
+          @media screen and (max-width: 400px) {
+            font-size: 14px;
+          }
+        }
+        ul {
+          padding-top: 3%;
+          list-style: none;
+          @media screen and (max-width: $sm) {
+            padding: 0px;
+            padding-top: 7%;
+          }
+          li {
+            margin-bottom: 2%;
+            padding-left: 5%;
+            @media screen and (max-width: $sm) {
+              padding-left: 0px;
+            }
+            h2 {
+              margin: 0px;
+              padding: 0px;
+              font-size: 35px;
+              @media screen and (max-width: $sm) {
+                font-size: 27px;
+              }
+            }
+            p {
+              padding: 0px;
+            }
+          }
+        }
+        button {
+          color: $light-blue;
+          font-size: 29px;
+          font-family: "Sofia Pro", sans-serif;
+          font-weight: 600;
+          background-color: white;
+          padding: 10px 54px;
+          border-radius: 90px;
+          text-align: center;
+          text-decoration: none;
+          border: 0px;
+          margin-top: 5%;
+          margin-bottom: 5%;
+          @media screen and (max-width: $sm) {
+            font-size: 23px;
+            padding: 7px 36px;
+            margin-top: 15%;
+          }
+          @media screen and (max-width: 400px) {
+            font-size: 20px;
+          }
+        }
+      }
+      .right {
+        padding: 0px;
+        max-width: 48.8%;
+        min-height: 680px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media screen and (max-width: $md) {
+          margin: auto;
+          max-width: 655px;
+        }
+
+        .right-top {
+          border-radius: 8px;
+          background-color: #f1f1f4;
+          padding-right: 10px;
+          padding-left: 43px;
+          @media screen and (max-width: $sm) {
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          h2 {
+            padding-top: 32px;
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 600;
+            color: $light-blue;
+            font-size: 44px;
+            @media screen and (max-width: $sm) {
+              font-size: 38px;
+            }
+          }
+          p {
+            max-width: 575px;
+            padding-top: 14px;
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 400;
+            color: #6f6f70;
+            font-size: 18px;
+            line-height: 30px;
+            @media screen and (max-width: $sm) {
+              font-size: 16px;
+            }
+            @media screen and (max-width: 400px) {
+              padding-top: 10px;
+              font-size: 14px;
+            }
+          }
+          button {
+            margin-top: 36px;
+            margin-bottom: 50px;
+            color: white;
+            font-size: 16px;
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            background-color: #636363;
+            padding: 9px 30px;
+            border-radius: 90px;
+            text-align: center;
+            text-decoration: none;
+            border: 0px;
+            @media screen and (max-width: 400px) {
+              margin-top: 0px;
+              font-size: 12px;
+            }
+          }
+        }
+        .right-bottom {
+          border-radius: 8px;
+          padding-right: 10px;
+          background-color: #f1f1f4;
+          min-height: 336px;
+          margin-top: 24px;
+          height: 100%;
+          padding-left: 43px;
+          @media screen and (max-width: $sm) {
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          h2 {
+            padding-top: 32px;
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 600;
+            color: $light-blue;
+            font-size: 36px;
+            @media screen and (max-width: $sm) {
+              font-size: 28px;
+            }
+          }
+          p {
+            max-width: 575px;
+            padding-top: 14px;
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 400;
+            color: #6f6f70;
+            font-size: 18px;
+            line-height: 30px;
+            @media screen and (max-width: $sm) {
+              font-size: 16px;
+            }
+            @media screen and (max-width: 400px) {
+              padding-top: 10px;
+              font-size: 14px;
+            }
+          }
+          button {
+            margin-top: 36px;
+            color: white;
+            font-size: 16px;
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            background-color: #636363;
+            padding: 9px 30px;
+            border-radius: 90px;
+            text-align: center;
+            text-decoration: none;
+            border: 0px;
+            @media screen and (max-width: $sm) {
+              margin-top: 5%;
+            }
+            @media screen and (max-width: 400px) {
+              margin-top: 0px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $dark-blue;
+  min-height: 700px;
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-bottom: 100px;
+
+  .container {
+    max-width: 1333px;
+    .row-top {
+      padding-top: 73px;
+      ul {
+        padding: 0px;
+        @media screen and (max-width: $sm) {
+          text-align: center;
+        }
+        li {
+          display: inline;
+
+          img {
+            padding-right: 7.5%;
+            @media screen and (max-width: $md) {
+              padding-right: 4.5%;
+            }
+            @media screen and (max-width: $sm) {
+              display: none;
+            }
+          }
+          a {
+            padding-right: 5%;
+            text-transform: uppercase;
+            color: white;
+            font-family: "Sofia Pro", sans-serif;
+            font-weight: 600;
+            font-size: 12.5px;
+            text-decoration: none;
+            @media screen and (max-width: $md) {
+              padding-right: 3%;
+              font-size: 11px;
+            }
+            @media screen and (max-width: $md) {
+              padding-right: 1.5%;
+              padding-left: 1.5%;
+            }
+          }
+        }
+      }
+      .col {
+        text-align: right;
+        @media screen and (max-width: $sm) {
+          text-align: center;
+        }
+        img {
+          margin-left: 2.5px;
+          margin-right: 2.5px;
+        }
+      }
+    }
+    .row-mid {
+      max-width: 905px;
+      margin: auto;
+      margin-top: 55px;
+      @media screen and (max-width: $sm) {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+      ul {
+        padding-top: 19%;
+        padding-left: 9%;
+        @media screen and (max-width: $sm) {
+          padding-top: 10%;
+          padding-left: 0;
+        }
+        li {
+          color: white;
+          font-size: 14.5px;
+          font-family: "Sofia Pro", sans-serif;
+          font-weight: 400;
+          list-style: none;
+          margin-bottom: 2%;
+        }
+      }
+    }
+    .row-bottom {
+      max-width: 466px;
+      margin: auto;
+      padding-top: 77px;
+      p {
+        color: white;
+        font-size: 11px;
+        font-family: "Sofia Pro", sans-serif;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+  }
+}

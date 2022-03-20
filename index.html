@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtuloc</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="http://fonts.cdnfonts.com/css/sofia-pro?styles=17636,17630,17640,17632,17634,17638,17628,17626"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-expand-custom navbar-light navbar-custom">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand"
+            ><img alt="logo" style="max-width: 180px" src="docs/assets/log.svg"
+          /></a>
+          <button
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <div class="navbar-nav">
+              <ul class="links-left">
+                <li>
+                  <a class="nav-link" href="#">why virtuloc</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">features</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">choose plan</a>
+                </li>
+                <li>
+                  <a class="nav-link inspiration" href="#">inspiration</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-nav ml-auto">
+              <ul class="links-right">
+                <li>
+                  <a class="nav-link join" href="#">join meeting</a>
+                </li>
+                <li>
+                  <a class="nav-link sign" href="#">sign in</a>
+                </li>
+                <li>
+                  <a class="nav-link try" href="#">try demo for free</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="headline">
+      <div class="container">
+        <div class="row headline-image">
+          <img alt="meet-virtually" src="docs/assets/meet-virtually.png" />
+        </div>
+        <div class="row headline-text">
+          <h2>
+            The only web-based virtual space for business, education and events
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="container-fluid">
+        <img alt="slide2" id="mainPhoto" src="docs/assets/slide2.png" />
+        <div class="mainSlider">
+          <img
+            alt="slide1"
+            src="docs/assets/slide1.png"
+            style="display: none"
+          />
+          <img
+            alt="slide2"
+            src="docs/assets/slide2.png"
+            style="display: none"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="trusted">
+      <div class="container">
+        <h3>Trusted by</h3>
+        <div class="row companies">
+          <div class="col-auto">
+            <img
+              alt="vanderbilt"
+              style="max-width: 196px"
+              src="docs/assets/vanderbilt.png"
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              alt="ataccama"
+              style="max-width: 186px"
+              src="docs/assets/ataccama.png"
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              alt="microsoft"
+              style="max-width: 183px"
+              src="docs/assets/microsoft.png"
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              alt="melissa"
+              style="max-width: 154px"
+              src="docs/assets/melissa.png"
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              alt="servier"
+              style="max-width: 154px"
+              src="docs/assets/servier.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="explained">
+      <div class="container-fluid">
+        <div class="row row-top no-gutters">
+          <div class="col-lg col-md-12">
+            <div class="couch">
+              <img alt="couch" src="docs/assets/couch.png" />
+            </div>
+          </div>
+          <div class="col-lg col-md-12">
+            <div class="move">
+              <h3>Move online</h3>
+              <p>
+                Virtuloc is a leading sales & marketing tool offering you the
+                best place to meet online.<span>
+                  Virtual office, meeting room, branch, flagship store, product
+                  showroom, college campus, or exhibition hall.</span
+                >
+                Our mission is to offer you the most convenient way to create a
+                virtual world without any creative boundaries.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row row-bottom no-gutters">
+          <div class="col-lg col-md-12 order-lg-1">
+            <div class="machine">
+              <img alt="machine" src="docs/assets/machine.png" />
+            </div>
+          </div>
+          <div class="col-lg col-md-12">
+            <div class="expand">
+              <h3>Expand online</h3>
+              <p>
+                Reach from the physical world to the virtual one in a few easy
+                steps. Get closer to your customers, colleagues, students, or
+                peers.
+              </p>
+              <p><span>Starts at EUR 100 monthly</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reel">
+      <h1>The digital meeting point wherever you are</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-5 reel-text">
+            <div class="textbox">
+              <ul class="buttons">
+                <li>
+                  <button
+                    class="button-active"
+                    id="events-button"
+                    onclick="events()"
+                  >
+                    Events
+                  </button>
+                </li>
+                <li>
+                  <button id="business-button" onclick="business()">
+                    Business
+                  </button>
+                </li>
+                <li>
+                  <button id="education-button" onclick="education()">
+                    Education
+                  </button>
+                </li>
+              </ul>
+              <div id="events-text" class="text">
+                <p>
+                  Host online events with up to 300 participants and multiple
+                  presenters anywhere in the world.
+                  <span
+                    >Virtual office, meeting room, branch, flagship store,
+                    product showroom, college campus, or exhibition hall.</span
+                  >
+                  Our mission is to offer you the most convenient way to create
+                  a virtual world without any creative boundaries.
+                </p>
+                <ul>
+                  <li class="mil">
+                    <h2>50 Mil</h2>
+                    <p>
+                      Virtuloc is a leading sales & marketing tool offering you
+                    </p>
+                  </li>
+                  <li>
+                    <h2>40 %</h2>
+                    <p>
+                      Virtuloc is a leading sales & marketing tool offering you
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div id="business-text" class="text">
+                <p>
+                  Fill the gap between you brick-and-mortar store and impersonal
+                  e-comerce.
+                  <span class="yellow"
+                    >Virtual office, meeting room, branch, flagship store,
+                    product showroom, college campus, or exhibition hall.</span
+                  >
+                  Our mission is to offer you the most convenient way to create
+                  a virtual world without any creative boundaries.
+                </p>
+                <div class="bottom-text">
+                  <button class="button-reel inspired">Get inspired</button>
+                </div>
+              </div>
+              <div id="education-text" class="text">
+                <p>
+                  Engage with your students for remote learning in inspiring
+                  virtual space.
+                  <span class="yellow"
+                    >Virtual office, meeting room, branch, flagship store,
+                    product showroom, college campus, or exhibition hall.</span
+                  >
+                  Our mission is to offer you the most convenient way to create
+                  a virtual world without any creative boundaries.
+                </p>
+                <ul>
+                  <li class="mil">
+                    <h2 style="display: inline">4 Sec</h2>
+                    <img
+                      alt="arrows"
+                      class="pb-2 pl-3"
+                      src="docs/assets/arrows.png"
+                    />
+                    <p>
+                      Virtuloc is a leading sales & marketing tool offering you
+                    </p>
+                  </li>
+                  <li>
+                    <h2 style="display: inline">98 %</h2>
+                    <img
+                      alt="suitcase"
+                      class="pb-2 pl-3"
+                      src="docs/assets/suitcase.png"
+                    />
+                    <p>
+                      Virtuloc is a leading sales & marketing tool offering you
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-7 reel-video">
+            <div class="vid" id="events-video">
+              <video muted autoplay loop>
+                <source src="docs/assets/events.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="vid" id="business-video">
+              <video muted autoplay loop>
+                <source src="docs/assets/business.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="vid" id="education-video">
+              <video muted autoplay loop>
+                <source src="docs/assets/education.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="small-screen">
+        <div class="video">
+          <div class="vid" id="small-events-video">
+            <video muted autoplay loop>
+              <source src="docs/assets/events.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="vid" id="small-business-video">
+            <video muted autoplay loop>
+              <source src="docs/assets/education.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="vid" id="small-education-video">
+            <video muted autoplay loop>
+              <source src="docs/assets/business.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="small-screen-text">
+          <ul class="buttons">
+            <li>
+              <button
+                class="button-active"
+                id="small-events-button"
+                onclick="events()"
+              >
+                Events
+              </button>
+            </li>
+            <li>
+              <button id="small-business-button" onclick="business()">
+                Business
+              </button>
+            </li>
+            <li>
+              <button id="small-education-button" onclick="education()">
+                Education
+              </button>
+            </li>
+          </ul>
+          <div id="small-events-text">
+            <p class="paragraph">
+              Host online events with up to 300 participants and multiple
+              presenters anywhere in the world.
+              <span
+                >Virtual office, meeting room, branch, flagship store, product
+                showroom, college campus, or exhibition hall.</span
+              >
+              Our mission is to offer you the most convenient way to create a
+              virtual world without any creative boundaries.
+            </p>
+            <ul class="short-text">
+              <li class="mil">
+                <h2>50 Mil</h2>
+                <p>Virtuloc is a leading sales & marketing tool offering you</p>
+              </li>
+              <li>
+                <h2>40 %</h2>
+                <p>Virtuloc is a leading sales & marketing tool offering you</p>
+              </li>
+            </ul>
+          </div>
+          <div id="small-business-text">
+            <p class="paragraph">
+              Fill the gap between you brick-and-mortar store and impersonal
+              e-comerce.
+              <span
+                >Virtual office, meeting room, branch, flagship store, product
+                showroom, college campus, or exhibition hall.</span
+              >
+              Our mission is to offer you the most convenient way to create a
+              virtual world without any creative boundaries.
+            </p>
+            <div class="bottom-text">
+              <button class="button-reel inspired">Get inspired</button>
+            </div>
+            <br />
+          </div>
+          <div id="small-education-text">
+            <p class="paragraph">
+              Engage with your students for remote learning in inspiring virtual
+              space.
+              <span
+                >Virtual office, meeting room, branch, flagship store, product
+                showroom, college campus, or exhibition hall.</span
+              >
+              Our mission is to offer you the most convenient way to create a
+              virtual world without any creative boundaries.
+            </p>
+            <ul class="short-text">
+              <li class="mil">
+                <h2 style="display: inline-block">4 Sec</h2>
+                <img
+                  alt="arrows"
+                  class="pb-2 pl-3"
+                  src="docs/assets/arrows.png"
+                />
+                <p>Virtuloc is a leading sales & marketing tool offering you</p>
+              </li>
+              <li>
+                <h2 style="display: inline">98 %</h2>
+                <img
+                  alt="suitcase"
+                  class="pb-2 pl-3"
+                  src="docs/assets/suitcase.png"
+                />
+                <p>Virtuloc is a leading sales & marketing tool offering you</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="container">
+        <div class="row main-text">
+          <div class="col">
+            <h2>The Best Virtuloc features</h2>
+            <p><span>Learn more</span> how to get the best from Virtuloc</p>
+          </div>
+        </div>
+        <div class="row cards">
+          <div class="col-auto">
+            <div class="card" style="width: 18rem">
+              <div class="card-image">
+                <img
+                  class="card-img-top"
+                  style="width: 109px"
+                  src="docs/assets/icon4.png"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Web-based</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Culpa, est vero. Nostrum repellat magnam similique mollitia
+                  repudiandae officiis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card" style="width: 18rem">
+              <div class="card-image">
+                <img
+                  class="card-img-top"
+                  style="width: 98px"
+                  src="docs/assets/icon3.png"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Real-time analytics</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Culpa, est vero. Nostrum repellat magnam similique mollitia
+                  repudiandae officiis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card" style="width: 18rem">
+              <div class="card-image">
+                <img
+                  class="card-img-top"
+                  style="width: 99px"
+                  src="docs/assets/icon1.png"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Simply Customizable</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Culpa, est vero. Nostrum repellat magnam similique mollitia
+                  repudiandae officiis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card" style="width: 18rem">
+              <div class="card-image">
+                <img
+                  class="card-img-top"
+                  style="width: 70px"
+                  src="docs/assets/icon2.png"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Tailor-made 3D Content</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Culpa, est vero. Nostrum repellat magnam similique mollitia
+                  repudiandae officiis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card" style="width: 18rem">
+              <div class="card-image">
+                <img
+                  class="card-img-top"
+                  style="width: 101px"
+                  src="docs/assets/icon6.png"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">1st class security</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Culpa, est vero. Nostrum repellat magnam similique mollitia
+                  repudiandae officiis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="card" style="width: 18rem; height: 0px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="done">
+      <h2>What has been done</h2>
+      <div class="container">
+        <div class="row photos">
+          <div class="col-auto">
+            <img alt="done1" src="docs/assets/1.png" />
+          </div>
+          <div class="col-auto">
+            <img alt="done2" src="docs/assets/2.png" />
+          </div>
+          <div class="col-auto">
+            <img alt="done3" src="docs/assets/3.png" />
+          </div>
+          <div class="col-auto">
+            <img alt="done4" src="docs/assets/4.png" />
+          </div>
+          <div class="col-auto">
+            <img alt="done5" src="docs/assets/7.png" />
+          </div>
+          <div class="col-auto">
+            <img alt="done6" src="docs/assets/8.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col left">
+            <h2>You can start immediately</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis at
+              et, porro ad nihil quaerat eum aspernatur architecto ducimus autem
+              veniam laudantium voluptatum reprehenderit! Eligendi provident
+              nisi animi ut corrupti.
+            </p>
+            <ul>
+              <li>
+                <h2>Create</h2>
+                <p>Choose an existing room template</p>
+              </li>
+              <li>
+                <h2>Personalize</h2>
+                <p>Fill your data in intuitive online CMS</p>
+              </li>
+              <li>
+                <h2>Share</h2>
+                <p>Send link and lets start meeting!</p>
+              </li>
+            </ul>
+            <button>Try demo for free</button>
+          </div>
+          <div class="col right">
+            <div class="right-top">
+              <h2>Do you prefer own?</h2>
+              <p>
+                Are you interested in designing a special tailor-made
+                environment for you? Just give us your idea and it will be done
+                in 3-5 weeks.
+              </p>
+              <button class="button-cta-2">Book a meeting</button>
+            </div>
+            <div class="right-bottom">
+              <h2>Become our partner</h2>
+              <p>
+                Scale your business with Virtuloc and become a Reseller Partner.
+                Great opportunity for Creative Agencies, Software & IT Companies
+                and Channel Sales Partners.
+              </p>
+              <button class="button-cta-2">Get in touch</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row row-top">
+          <div class="col-md-11 col-sm-12 p-0">
+            <ul>
+              <li>
+                <img src="docs/assets/log.svg" alt="logo" />
+              </li>
+              <li>
+                <a href="">why virtuloc</a>
+              </li>
+              <li>
+                <a href="">features</a>
+              </li>
+              <li>
+                <a href="">choose plan</a>
+              </li>
+              <li>
+                <a href="">inspiration</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col p-0">
+            <img alt="fb" src="docs/assets/fb.png" />
+            <img alt="ln" src="docs/assets/ln.png" />
+          </div>
+        </div>
+        <div class="row row-mid">
+          <div class="col-md col-sm-12 p-0">
+            <img alt="building" src="docs/assets/building.png" />
+          </div>
+          <div class="col-md col-sm-12 p-0">
+            <ul>
+              <li>Virtuloc, s.r.o</li>
+              <li>Nile House, karolinska 654/2, 186 00</li>
+              <li>Czech Republic</li>
+              <li>VAT ID: CZ09450297</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-bottom">
+          <div class="col">
+            <p>© 2021 Virtuloc, s.r.o.</p>
+          </div>
+          <div class="col">
+            <p>Privacy policy</p>
+          </div>
+          <div class="col">
+            <p>Terms & Conditions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
